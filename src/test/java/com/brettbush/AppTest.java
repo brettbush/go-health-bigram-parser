@@ -1,11 +1,13 @@
 package com.brettbush;
 
+import com.brettbush.everything.IFileParser;
 import org.junit.jupiter.api.Test;
 
 import java.io.FileNotFoundException;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.mockito.ArgumentMatchers.anyString;
 
 /**
  * Unit test for simple App.
@@ -24,10 +26,9 @@ public class AppTest {
     }
 
     @Test
-    public void verifyFilePathExistsTest(){
+    public void verifyFileExistsTest(){
         assertThrows(FileNotFoundException.class, () -> {
-            App.main(new String[]{"LazyFox.txt"});
+            App.main(new String[]{"HappyFox.txt"});
         });
     }
-
 }
