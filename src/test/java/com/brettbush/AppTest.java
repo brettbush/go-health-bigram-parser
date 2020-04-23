@@ -1,20 +1,33 @@
 package com.brettbush;
 
-import static org.junit.Assert.assertTrue;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
+import java.io.FileNotFoundException;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
+public class AppTest {
+
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void verifyArgumentsTest() {
+        assertThrows(IllegalArgumentException.class, () -> {
+                App.main(new String[0]);
+        });
+
+        assertThrows(IllegalArgumentException.class, () -> {
+            App.main(null);
+        });
     }
+
+    @Test
+    public void verifyFilePathExistsTest(){
+        assertThrows(FileNotFoundException.class, () -> {
+            App.main(new String[]{"LazyFox.txt"});
+        });
+    }
+
 }
