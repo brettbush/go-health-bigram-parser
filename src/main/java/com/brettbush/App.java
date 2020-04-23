@@ -1,7 +1,5 @@
 package com.brettbush;
 
-import com.brettbush.service.FileDataService;
-
 import java.io.IOException;
 
 /**
@@ -15,8 +13,7 @@ public class App {
             throw new IllegalArgumentException("You must supply a file name as an argument.");
         }
 
-        String fileWithPath = args[0];
-        FileDataService fileDataService = new FileDataService();
-        String fileContent = fileDataService.readFileData(fileWithPath);
+        String pathToFile = args[0];
+
     }
 }

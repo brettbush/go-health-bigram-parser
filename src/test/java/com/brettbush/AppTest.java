@@ -1,9 +1,6 @@
 package com.brettbush;
 
 import org.junit.jupiter.api.Test;
-
-import java.io.FileNotFoundException;
-
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
@@ -19,13 +16,6 @@ public class AppTest {
 
         assertThrows(IllegalArgumentException.class, () -> {
             App.main(null);
-        });
-    }
-
-    @Test
-    public void verifyFileExistsTest(){
-        assertThrows(FileNotFoundException.class, () -> {
-            App.main(new String[]{"HappyFox.txt"});
         });
     }
 }
