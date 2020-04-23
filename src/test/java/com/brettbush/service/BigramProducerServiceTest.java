@@ -1,4 +1,4 @@
-package com.brettbush.everything;
+package com.brettbush.service;
 
 import org.junit.jupiter.api.Test;
 

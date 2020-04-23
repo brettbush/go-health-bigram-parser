@@ -1,7 +1,8 @@
-package com.brettbush.everything;
+package com.brettbush.service;
 
 import com.brettbush.App;
 import org.apache.commons.io.FileUtils;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
