@@ -1,11 +1,8 @@
 package com.brettbush;
 
 import com.brettbush.everything.FileDataService;
-import com.brettbush.everything.IFileParser;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.URL;
 
 /**
  * Hello world!

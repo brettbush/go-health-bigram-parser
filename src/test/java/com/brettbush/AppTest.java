@@ -1,13 +1,11 @@
 package com.brettbush;
 
-import com.brettbush.everything.IFileParser;
 import org.junit.jupiter.api.Test;
 
 import java.io.FileNotFoundException;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.mockito.ArgumentMatchers.anyString;
 
 /**
  * Unit test for simple App.
