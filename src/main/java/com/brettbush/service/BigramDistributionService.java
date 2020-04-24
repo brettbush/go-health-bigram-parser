@@ -1,13 +1,13 @@
 package com.brettbush.service;
 
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 
 public class BigramDistributionService {
 
     public Map<String, Integer> calculateDistribution(List<String> bigrams){
-        Map<String, Integer> returnValue = new TreeMap<>();
+        Map<String, Integer> returnValue = new LinkedHashMap<>();
 
         bigrams.stream()
                 .forEach(bigram -> {
